@@ -1,0 +1,90 @@
+
+---
+title: |
+  ![](img/pgm.png){width=60%} 
+  
+  Aula de Análise Genômica para Estudar a Homologia ou Similaridade de Um Gene Candidado com Genes de Arabidopsis thaliana
+author: "Helio de Souza Junior,^[Universidade Estadual de Maringá, helioszjr@gmail.com] PG:55679"
+date: "06-09-2025"
+format: pdf
+lang: pt
+toc: true
+code-annotations: "hover"
+editor: 
+  markdown: 
+    wrap: 72
+editor_options: 
+  chunk_output_type: console
+---
+
+\pagebreak
+**Disciplina: Genômica Aplicada ao Melhoramento de Plantas, ministrada pela Profa. Dra. Maria Celeste.**
+
+Elaborado por [Helio de Souza Junior](https://github.com/Helioszjr), com
+[RStudio](https://posit.co/download/rstudio-desktop) usando
+[Rmarkdown](https://rmarkdown.rstudio.com/index.html) e
+[Quarto](https://quarto.org/docs/guide/) . Código disponível no
+[GitHub](https://github.com/Helioszjr).
+
+1 - Inicialmente copiar o nome do gene 'alvo', no caso ex: Phvul.001G245300 
+e em seguida  
+
+2 - Vai ao phytozome : https://phytozome.jgi.doe.gov/pz/portal.html#!search?show=BLAST
+
+3 - Clica em species  no ex. Phaseolus vulgaris L, em seguida clica em Keywods
+
+4 - Cola o nome do gene nessa janela que aparece e
+
+5 - Clica GO
+
+6 - na busca aparece na janela o nome do gene com a annotation
+
+7 - Clica no G que se encontra na linha da annotation, automaticamente aparece a página contendo as informações do gene
+
+8 - na pagina do gene, clica em Sequence em seguida
+
+9 - Clica em Peptide Sequence
+
+10 - Copiar a sequence que aparece na mesma janela na parte de baixo
+
+11- Vai ao NCBI
+
+12 - https://blast.ncbi.nlm.nih.gov/Blast.cgi
+
+13 - Clica em Protein Blast 
+
+14 - Na Janela Enter Acession Number: colar a Peptide Sequence  vinda do Phytozome e em seguida 
+
+15 - Seleciona logo abaixo o organismo : Arabidopsis thaliana
+
+16 - Clicar em Blast
+
+17 - Pegar a annotation que tem o menor p-value 
+
+18 - Anotar o p-value e Percentage Ident (para o seu manuscrito)
+
+19 - Clicar nessa annotation e na próxima pagina que aparece: 
+
+20 - Clicar em no número em frente à Sequence ID : 193599.3
+
+21 - Desce a página até encontrar o locus da Arabidopsis em CDS
+
+23 - Copiar o locus (nome do gene da Arabidopsis), no caso "AT4G18640"
+
+24 - Vai ao TAIR : https://www.arabidopsis.org/
+
+25 - Colar o gene AT4G18640 and clicar Search
+
+26 - Pegar a Description do gene: no caso MALE DISOVERER 2 (para o seu paper)
+
+27 - Clicar no gene AT4G18640, aguardar e automaticamente aparecem várias informações sobre o gene, então rola a página até Publication e em Associated Loci analisa os artigos que serão importantes para voce interpretar os seus dados de similaridade com a Arabidopsis 
+
+28 - Clicar nos  nomes dos Autores, depois na próxima janela clicar no DOI
+
+29 - Baixar o artigo
+
+30 - Baixar todos os artigos que achar interessante para sua pesquisa
+
+Como interpretar:
+
+The Phvul.001G245300 was shown to be homolog of the A. thaliana Male Disoverer 2 (MDIS2), a receptor located at the pollen tube that perceives female attractant signal to promote fertilization (Wang et al. 2016; Bruex et al. 2012).
